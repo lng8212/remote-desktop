@@ -8,9 +8,7 @@ public class FPSCheckThread extends Thread {
         while (true) {
             try {
                 sleep(1000);
-                FPSLabel.setText("FPS : " + Integer.toString(FPSCount));
-                // repaint();
-                // System.out.println("FPS : " + FPScount);
+                FPSLabel.setText("FPS : " + FPSCount);
                 FPSCount = 0;
             } catch (InterruptedException e) {
             }

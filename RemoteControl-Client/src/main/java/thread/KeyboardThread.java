@@ -19,10 +19,9 @@ public class KeyboardThread extends Thread {
             try {
                 System.out.println(info.vkCode);
                 if (info.vkCode == 21) {
-                    System.out.println("한영");
                     if (keypress == 0) {
-                        u32.keybd_event((byte) 0x15, (byte) 0, 0, 0);// 누름ffDDDddSS
-                        u32.keybd_event((byte) 0x15, (byte) 00, (byte) 0x0002, 0);// 땜
+                        u32.keybd_event((byte) 0x15, (byte) 0, 0, 0);//ffDDDddSS
+                        u32.keybd_event((byte) 0x15, (byte) 00, (byte) 0x0002, 0);
                         keypress++;
                     } else {
                         keypress = 0;
