@@ -29,7 +29,7 @@
         |   └── src
         |       └── main
         |           └── java
-        |               └── main.NetworkScreenClient
+        |               └── view.NetworkScreenClient
         └── RemoteControl-Client
         |   ├── pom.xml
     -->

@@ -1,17 +1,18 @@
-package main;
+package view;
 
 import util.Constant;
-import view.ControlPanel;
 
 import javax.swing.*;
-import java.awt.event.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class NetworkScreenClient extends JFrame {
-	private JFrame jFrame = this;
-	private ControlPanel controlPanel = new ControlPanel(jFrame);
+	private final JFrame jFrame = this;
+	private final ControlPanel controlPanel = new ControlPanel(jFrame);
+
 	public NetworkScreenClient() {
 		setTitle("Remove Assistance");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(null);
 		setContentPane(controlPanel);
 		setSize(Constant.FRAME_WIDTH, Constant.FRAME_HEIGHT);
