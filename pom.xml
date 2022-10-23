@@ -61,7 +61,7 @@
                                 <archive>
                                     <manifest>
                                         <addClasspath>true</addClasspath>
-                                        <mainClass>main.Main</mainClass>
+                                        <mainClass>main.main.Main</mainClass>
                                     </manifest>
                                 </archive>
                                 <descriptorRefs>

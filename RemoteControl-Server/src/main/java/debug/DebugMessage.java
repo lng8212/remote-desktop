@@ -1,3 +1,4 @@
+package debug;
 
 public class DebugMessage {
 	public static void printDebugMessage(String message) {
