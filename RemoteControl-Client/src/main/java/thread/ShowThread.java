@@ -1,6 +1,6 @@
 package thread;
 
-import AppInterface.RepaintCallBack;
+import listener.RepaintCallBack;
 import org.xerial.snappy.Snappy;
 
 import java.awt.*;
@@ -11,7 +11,7 @@ import java.awt.image.Raster;
 import static util.StaticVariable.*;
 
 public class ShowThread extends Thread {
-    private RepaintCallBack repaintCallBack;
+    private final RepaintCallBack repaintCallBack;
     public ShowThread(RepaintCallBack repaintCallBack) {
         this.repaintCallBack = repaintCallBack;
     }
